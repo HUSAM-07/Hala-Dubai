@@ -27,7 +27,7 @@ export default function Home() {
             </p>
             <Button size="lg" className="h-10 sm:h-12 px-6 sm:px-8 text-base sm:text-lg">
               <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-              Get the App
+              <Link href="/student-spots">Hala Feed</Link>
             </Button>
           </header>
 
