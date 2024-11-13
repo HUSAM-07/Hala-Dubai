@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Star, Download, Users, MapPin, Trophy, Building2, Compass, Coffee } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
@@ -14,12 +13,9 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6">
               Your{" "}
               <span className="inline-flex gap-2 mx-2">
-                <Image
-                  src="/dubai-logo.jpg"
-                  alt="Dubai Logo"
-                  width={48}
-                  height={48}
-                  className="rounded-xl sm:w-16 sm:h-16"
+                <Building2 
+                  className="w-12 h-12 sm:w-16 sm:h-16 text-primary" 
+                  strokeWidth={1.5}
                 />
               </span>
               personalized
@@ -50,11 +46,9 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="relative h-40 sm:h-48 md:h-full">
-                  <Image
-                    src="/dubai-logo.jpg"
-                    alt="Dubai Skyline"
-                    fill
-                    className="object-cover rounded-xl"
+                  <Building2 
+                    className="w-12 h-12 sm:w-16 sm:h-16 text-primary" 
+                    strokeWidth={1.5}
                   />
                 </div>
               </div>
