@@ -6,7 +6,7 @@ import { Star, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import { SPOTS, AMENITIES } from "@/data/spots";
+import { SPOTS, AMENITIES } from "@/app/data/spots";
 import type { AmenityType } from "@/types/spots";
 
 export default function StudentSpots() {
