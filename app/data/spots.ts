@@ -110,5 +110,27 @@ export const SPOTS: SpotType[] = [
     amenities: ["wifi", "power", "outdoor", "coffee", "food"],
     hours: "8:00 AM - 8:00 PM",
     description: "Eco-friendly study space with indoor and outdoor seating options.",
-  }
+  },
+  {
+    id: 10,
+    name: "The Tap House, Downtown",
+    location: "Dubai Downtown",
+    image: "/spots/taphouse.jpg",
+    capacity: 40,
+    currentOccupancy: 20,
+    amenities: ["wifi", "power", "outdoor", "coffee", "food"],
+    hours: "12:00 PM - 1:00 AM",
+    description: "Casual yet sophisticated gastropub offering premium steaks and craft beverages with Downtown views.",
+  },
+  {
+    id: 11,
+    name: "Toit",
+    location: "Warqa, Dubai",
+    image: "/spots/toit.jpg",
+    capacity: 15,
+    currentOccupancy: 20,
+    amenities: ["power", "outdoor", "food"],
+    hours: "5:00 PM - 1:00 AM",
+    description: "Serving a selection of Fast Food, Fried Chicken, Sliders that delivers across Al Warqa 1",
+  },
 ]; 
