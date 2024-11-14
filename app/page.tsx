@@ -14,7 +14,8 @@ export default function Home() {
               Your{" "}
               <span className="inline-flex gap-2 mx-2">
                 <Building2 
-                  className="w-12 h-12 sm:w-16 sm:h-16 text-primary" 
+                  className="w-12 h-12 sm:w-16 sm:h-16 text-primary"
+                  color="#ff0000" 
                   strokeWidth={1.5}
                 />
               </span>
@@ -26,7 +27,7 @@ export default function Home() {
               unforgettable moments in Dubai.
             </p>
             <Button size="lg" className="h-10 sm:h-12 px-6 sm:px-8 text-base sm:text-lg">
-              <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <Building2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               <Link href="/student-spots">Hala Feed</Link>
             </Button>
           </header>
