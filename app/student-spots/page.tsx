@@ -27,7 +27,7 @@ export default function StudentSpots() {
         {/* Header */}
         <header className="mb-6 sm:mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Student Spots</h1>
-          <p className="text-sm sm:text-base text-gray-600">Discover the perfect study spots in Dubai</p>
+          <p className="text-sm sm:text-base text-gray-600">Discover the spots popular amongst students in Dubai</p>
         </header>
 
         {/* Search and Filter Section */}

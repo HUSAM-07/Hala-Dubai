@@ -46,12 +46,6 @@ export default function Home() {
                     From iconic landmarks to secret spots, explore the city like never before with our curated recommendations.
                   </p>
                 </div>
-                <div className="relative h-40 sm:h-48 md:h-full">
-                  <Building2 
-                    className="w-12 h-12 sm:w-16 sm:h-16 text-primary" 
-                    strokeWidth={1.5}
-                  />
-                </div>
               </div>
             </section>
 
