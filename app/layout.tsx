@@ -76,27 +76,33 @@ function MobileMenu() {
       <DropdownMenuTrigger className="md:hidden p-2">
         <Menu className="h-6 w-6" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem>
-          <a href="/" className="w-full">Home Page</a>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <a href="/feature" className="w-full">About</a>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <a href="/student-spots" className="w-full">Student Spots</a>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <a href="/trails" className="w-full">Explore Trails</a>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Button asChild variant="outline" className="w-full justify-start">
-            <a href="/student-spots" className="inline-flex items-center justify-start w-full">
-              Try Now
-              <Building2 className="ml-auto h-4 w-4" />
-            </a>
-          </Button>
-        </DropdownMenuItem>
+      <DropdownMenuContent 
+        className="w-screen min-w-[100vw] mt-2" 
+        align="start" 
+        side="bottom"
+      >
+        <div className="px-2 py-2">
+          <DropdownMenuItem>
+            <a href="/" className="w-full">Home Page</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <a href="/feature" className="w-full">About</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <a href="/student-spots" className="w-full">Student Spots</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <a href="/trails" className="w-full">Explore Trails</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <Button asChild variant="outline" className="w-full justify-start">
+              <a href="/student-spots" className="inline-flex items-center justify-start w-full">
+                Try Now
+                <Building2 className="ml-auto h-4 w-4" />
+              </a>
+            </Button>
+          </DropdownMenuItem>
+        </div>
       </DropdownMenuContent>
     </DropdownMenu>
   );
