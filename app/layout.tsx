@@ -81,7 +81,7 @@ function MobileMenu() {
           <a href="/" className="w-full">Home Page</a>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <a href="/about" className="w-full">About</a>
+          <a href="/feature" className="w-full">About</a>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <a href="/student-spots" className="w-full">Student Spots</a>
