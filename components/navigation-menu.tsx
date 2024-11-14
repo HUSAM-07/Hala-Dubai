@@ -53,13 +53,19 @@ export function NavigationMenu() {
                     >
                       Student Spots
                     </Link>
+                    <Link
+                      href="/trails"
+                      className="text-lg font-medium py-2 hover:text-primary transition-colors"
+                    >
+                      Trails in UAE
+                    </Link>
                   </div>
                 </div>
                 <div className="p-6 border-t">
                   <Button 
                     className="w-full bg-primary text-white hover:bg-primary/90"
                   >
-                    Try for Free
+                    <Link href="/student-spots">Try for Free</Link>
                   </Button>
                 </div>
               </div>
@@ -94,6 +100,13 @@ export function NavigationMenu() {
               Student Spots
               <span className="absolute inset-x-0 -bottom-[21px] h-[2px] bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
             </Link>
+            <Link 
+              href="/trails" 
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 relative group"
+            >
+              Trails in UAE
+              <span className="absolute inset-x-0 -bottom-[21px] h-[2px] bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
+            </Link>
           </div>
         </div>
 
@@ -103,7 +116,7 @@ export function NavigationMenu() {
             variant="default" 
             className="bg-primary text-white hover:bg-primary/90 hidden md:flex"
           >
-            Try for Free
+            <Link href="/student-spots">Try for Free</Link>
           </Button>
         </div>
       </div>
