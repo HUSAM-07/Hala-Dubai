@@ -1,4 +1,4 @@
 # Hala Dubai
 
-![Thumbnail](/public/haladubai_thumbnail)
+![Thumbnail](/public/haladubai_thumbnail.png)
  
