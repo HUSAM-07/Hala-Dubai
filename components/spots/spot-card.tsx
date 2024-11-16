@@ -18,10 +18,12 @@ export function SpotCard({ spot, amenities }: SpotCardProps) {
     <Card className="bg-white/10 border-none text-white hover:bg-white/20 transition-colors">
       <CardHeader>
         <div className="aspect-video relative rounded-md overflow-hidden mb-4">
-          <img
+          <Image
             src={spot.image}
             alt={spot.name}
-            className="object-cover w-full h-full"
+            width={500}
+            height={300}
+            className="w-full h-auto"
           />
         </div>
         <CardTitle>{spot.name}</CardTitle>

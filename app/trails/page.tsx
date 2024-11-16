@@ -18,7 +18,7 @@ export default function TrailsComingSoon() {
           Trails Coming Soon
         </h1>
         <p className="text-lg sm:text-xl text-gray-600">
-          We're working on bringing you an amazing trails experience. Stay tuned!
+          We&apos;re working on bringing you an amazing trails experience. Stay tuned!
         </p>
       </div>
     </div>

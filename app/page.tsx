@@ -83,7 +83,7 @@ export default function Home() {
               {
                 icon: Trophy,
                 title: "Expert Insights",
-                description: "Curated by Dubai's finest local guides"
+                description: "Curated by Dubai&apos;s finest local guides"
               }
             ].map((feature, index) => (
               <section 
