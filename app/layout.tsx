@@ -54,8 +54,11 @@ function DesktopMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink className="hover:underline" href="/student-spots">Student Spots</NavigationMenuLink>
         </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink className="hover:underline" href="/trails">Explore Trails</NavigationMenuLink>
+          </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuLink className="hover:underline" href="/trails">Explore Trails</NavigationMenuLink>
+          <NavigationMenuLink className="hover:underline" href="/blog">Blog</NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Button asChild variant="outline" size="sm">
@@ -93,6 +96,9 @@ function MobileMenu() {
           </DropdownMenuItem>
           <DropdownMenuItem>
             <a href="/trails" className="w-full">Explore Trails</a>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <a href="/blog" className="w-full">Blog</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <Button asChild variant="outline" className="w-full justify-start">
