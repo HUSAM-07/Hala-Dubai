@@ -55,8 +55,7 @@
     "embla-carousel-react": "^8.3.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
-    "firebase": "^10.9.0",
-    "framer-motion": "^11.11.15",
+    "framer-motion": "^11.11.17",
     "geist": "^1.2.2",
     "gray-matter": "^4.0.3",
     "input-otp": "^1.2.4",
@@ -79,5 +78,8 @@
     "typescript": "5.2.2",
     "vaul": "^0.9.9",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15"
   }
 }
