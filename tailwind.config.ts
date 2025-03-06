@@ -3,20 +3,38 @@ import type { Config } from "tailwindcss"
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
       screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
         "2xl": "1400px",
       },
     },
     extend: {
+      screens: {
+        xs: "475px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,6 +69,39 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        violet: {
+          1: "var(--violet-1)",
+          2: "var(--violet-2)",
+          3: "var(--violet-3)",
+          4: "var(--violet-4)",
+          5: "var(--violet-5)",
+          6: "var(--violet-6)",
+          7: "var(--violet-7)",
+          8: "var(--violet-8)",
+          9: "var(--violet-9)",
+          10: "var(--violet-10)",
+          11: "var(--violet-11)",
+          12: "var(--violet-12)",
+          a1: "var(--violet-a1)",
+          a2: "var(--violet-a2)",
+          a3: "var(--violet-a3)",
+          a4: "var(--violet-a4)",
+          a5: "var(--violet-a5)",
+          a6: "var(--violet-a6)",
+          a7: "var(--violet-a7)",
+          a8: "var(--violet-a8)",
+          a9: "var(--violet-a9)",
+          a10: "var(--violet-a10)",
+          a11: "var(--violet-a11)",
+          a12: "var(--violet-a12)",
+          contrast: "var(--violet-contrast)",
+          surface: "var(--violet-surface)",
+          indicator: "var(--violet-indicator)",
+          track: "var(--violet-track)",
+        },
+      },
+      borderColor: {
+        DEFAULT: "hsl(var(--border))"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -66,14 +117,41 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        "fade-out": {
+          from: { opacity: "1" },
+          to: { opacity: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.3s ease-in-out",
+        "fade-out": "fade-out 0.3s ease-in-out",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '65ch',
+            a: {
+              textDecoration: 'underline',
+              textUnderlineOffset: '3px',
+              '&:hover': {
+                opacity: 0.8,
+              },
+            },
+          },
+        },
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require('@tailwindcss/typography'),
+  ],
 } satisfies Config
 
 export default config
